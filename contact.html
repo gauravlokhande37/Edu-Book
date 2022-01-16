@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBook Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <!-- for small page font -->
+</head>
+
+<body>
+    <section class="sub-header1">
+        <nav>
+            <a href="index.html"><img src="photos/edu.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!-- for Icon -->
+                <ul>
+                    <li><a href="index.html"><b>HOME</b></a></li>
+                    <li><a href="about.html"><b>ABOUT</b></a></li>
+                    <li><a href="blog.html"><b>BLOG</b></a></li>
+                    <li><a href="course.html"><b>COURSES</b></a></li>
+                    <!-- <li><a href=""><b>MATHS FORMULAS</b></a></li> -->
+                    <li><a href="contact.html"><b>CONTACT</b></a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <!-- Use for icon -->
+        </nav>
+        <h1> Contact Us </h1>
+    </section>
+
+    <!-- CONTACT US -->
+
+
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Amaravati,Maharashtra,India</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+1 0123456789</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fas fa-envelope-0"></i>
+                    <span>
+                        <h5>info@edubook.com</h5>
+                        <p>Email Us Your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn"> Send Message</button>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4> About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor <br>sit amet consectetur adipisicing elit.
+        </p>
+
+        <div class="icons">
+            <i class="fas fa-facebook"></i>
+            <i class="fas fa-twitter"></i>
+            <i class="fas fa-instagram"></i>
+            <i class="fas fa-linkedin"></i>
+            <p>Made with <i class="fas fa-heart"></i> by EduBook Group </p>
+        </div>
+
+    </section>
+
+
+
+    <!-- *****JAVA SCRIPT FOR TOGGLE MENU***** -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>

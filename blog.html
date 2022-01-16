@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBook Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <!-- for small page font -->
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="photos/edu.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!-- for Icon -->
+                <ul>
+                    <li><a href="index.html"><b>HOME</b></a></li>
+                    <li><a href="about.html"><b>ABOUT</b></a></li>
+                    <li><a href="blog.html"><b>BLOG</b></a></li>
+                    <li><a href="course.html"><b>COURSES</b></a></li>
+                    <!-- <li><a href=""><b>MATHS FORMULAS</b></a></li> -->
+                    <li><a href="contact.html"><b>CONTACT</b></a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <!-- Use for icon -->
+        </nav>
+        <h1> Edu-Book (Free Online Learning Platform) </h1>
+    </section>
+
+    <!-- *****BLOG PAGE***** -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="photos/edu.png">
+                <h2> EduBook </h2>
+                <p>
+                    FEATURE:<br> Post & comment feature.<br> 2. 24 hour respond from our experts.<br> 3. Teacher - Student interaction (through message as well as audio).<br> 4. Search courses and topics.<br> 5. Notification. <br>6. Chat with expert.<br>                    7. Call our expert.
+                    <br> 8. Available youtube videos.
+                    <br> 9. All Maths formula.<br> 10. Optional login panel. <br>11. Learning apps provider.<br> 12. Query related video suggestions are also available.<br> 13. Our moto - ATMANIRBHAR BANEGA INDIA TABHI TOH BADHEGA INDIA.<br> 14. For more
+                    information and detail about all subjects students can joined our telegram channel
+                </p><br>
+                <p>
+                    ATTAINABILITY OF THE PROJECT:<br>l. We are going to follow the Agile Methodology to concurrently work on the UI, Research and Development, and Backend of the application by dividing the team to work on the different sections.
+                    <br> Post-college hours we plan to invest at least 3 hours on a daily basis to be able to implement the project in its entirety.<br> 3. We will concentrate on the first two weeks to firstly get updated with the technology involved
+                    in order to rapidly develop the website later.<br> 4. Once the website is developed, we will dedicate our time to testing the website and correcting the bugs which were identified during the testing</p><br>
+                <p>
+                    ENVIRONMENT SUSTABILITY OF THE PROJECT:<br> 1. By implementing this project there will be no harm to the environment, rather people will be benefited by using the facility provided by the website.<br> 2. It may help the environment
+                    on the other hand as it allows the study material to be given over the website.<br> 3. Paperless textbooks would really help in maintaining archives and reduce the paper usually used in such situations.</p> <br>
+                <p>
+                    ECONOMIC SUSTABILITY OF THE PROJECT:<br>Our project comes more in social sector so only maintenance of the website will require the money. For self-sustenance, we will be needing some traction over the website to generate enough money
+                    through advertisements and paid promotions (from blogs or health insurance).<br> We also plan to leverage government schemes and react out to other companies willing to support the projects financially as part of their CSR Activity.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment">
+                        </textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>AutoCad</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4> About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor <br>sit amet consectetur adipisicing elit.
+        </p>
+
+        <div class="icons">
+            <i class="fas fa-facebook"></i>
+            <i class="fas fa-twitter"></i>
+            <i class="fas fa-instagram"></i>
+            <i class="fas fa-linkedin"></i>
+            <p>Made with <i class="fas fa-heart"></i> by EduBook Group </p>
+        </div>
+
+    </section>
+
+
+
+    <!-- *****JAVA SCRIPT FOR TOGGLE MENU***** -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>
